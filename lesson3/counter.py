@@ -8,9 +8,14 @@
 
 
 class Counter:
-    pass
+    def __init__(self):
+        self.a = 0
 
+    def __call__(self, *args, **kwargs):
+        return self.a
 
+    def increment(self):
+        self.a += 1
 # код для проверки 
 counter = Counter()
 print(counter())  # 0

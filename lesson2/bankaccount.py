@@ -30,7 +30,7 @@ class BankAccount:
         self._balance -= amount
         
     def close(self):
-        return self._balance
+        return
 
 # код для проверки
 
