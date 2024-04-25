@@ -12,8 +12,9 @@ class Logger:
         self.filename = filename
 
     def __call__(self, message):
-        for index in l:
-            message.write(index + '\n')
+        my_file = open(self.filename, "w")
+        my_file.write(message)
+        my_file.close()
 
 # код для проверки 
 logger = Logger("log.txt")
