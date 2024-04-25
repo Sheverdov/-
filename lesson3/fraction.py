@@ -21,7 +21,7 @@ class Fraction:
         return f"{self.numerator}/{self.denominator}"
 
     def __add__(self, other):
-        return f"{other}"
+        return f"{self.denominator + other.numerator}/{self.numerator + other.numerator}"
 # код для проверки 
 fraction1 = Fraction(1, 2)
 print(repr(fraction1))  # Fraction(1, 2)
