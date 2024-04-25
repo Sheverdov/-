@@ -29,7 +29,7 @@ class BankAccount:
     def withdraw(self, amount):
         self._balance -= amount
         
-    def close(self):
+    def close(self):?
         return
 
 # код для проверки

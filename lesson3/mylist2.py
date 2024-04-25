@@ -16,7 +16,7 @@ class MyList2:
         return self
 
     def __next__(self):
-        return ' '.join(str(el) for el in self.data)
+        return ' '.join(str(el) for el in self.data)?
 
     def __getitem__(self, index):
         return self.data[index]

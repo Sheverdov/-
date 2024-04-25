@@ -8,7 +8,7 @@
 
 
 class Timer:
-    pass
+    def __enter__(self):?
 
 
 with Timer() as timer:
