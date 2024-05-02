@@ -14,7 +14,20 @@
 
 
 class Bird:
-    pass
+    def fly(self):
+        print("Flying")
+
+
+class Penguin(Bird):
+    def fly(self):
+        super().fly()
+        print("I am a penguin and cannot fly")
+
+
+class Eagle(Bird):
+    def hunt(self):
+        super().fly()
+        print("Hunting")
 
 
 # код для проверки 
